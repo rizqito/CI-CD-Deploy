@@ -1,3 +1,6 @@
+install:
+	go mod tidy
+	
 lint:
 	go fmt ./...
 
@@ -6,6 +9,6 @@ test:
 
 build:
 	go build -v .
-	
+
 run:
 	go run main.go
