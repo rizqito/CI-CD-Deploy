@@ -4,3 +4,14 @@ CI
     1. clone kode dulu
     2. run 'make build'
 3. jalanin test buat mastiin kodenya berjalan sesuai fungsi
+
+CD
+1. repo harus ada dockerfile untuk build
+2. harus punya akun dockerhub
+3. cara push
+    1. checkout repo
+    2. login ke dockerhub
+    3. docker build
+    4. docker push
+4. jangan push password ke github
+    perlu pakai env dan secret
