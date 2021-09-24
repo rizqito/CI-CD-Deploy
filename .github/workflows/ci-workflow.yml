@@ -1,0 +1,32 @@
+# CI
+# 1. tiap kali kode di push ke master
+# 2. jalanin build buat mastiin kodenya bisa di build
+#     1. clone kode dulu
+#     2. run 'make build'
+# 3. jalanin test buat mastiin kodenya berjalan sesuai fungsi
+
+# 1
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+# 2
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-go@v2
+        with:
+          go-versio: ^1.17'
+      - run: make build
+# 3
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-go@v2
+        with:
+          go-versio: ^1.17'
+      - run: make test

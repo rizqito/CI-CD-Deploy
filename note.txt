@@ -1,0 +1,6 @@
+CI
+1. tiap kali kode di push ke master
+2. jalanin build buat mastiin kodenya bisa di build
+    1. clone kode dulu
+    2. run 'make build'
+3. jalanin test buat mastiin kodenya berjalan sesuai fungsi
