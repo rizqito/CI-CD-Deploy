@@ -15,3 +15,20 @@ CD
     4. docker push
 4. jangan push password ke github
     perlu pakai env dan secret
+
+event:
+ketika pull request
+
+jobs:
+1. lint
+2. test
+
+step lint
+1. checkout repo
+2. setup go
+3. run lint. 'make lint' / 'go fmt ./...'
+
+step test
+1. checkout repo
+2. setup go
+3. run test. 'make test'
