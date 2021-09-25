@@ -24,4 +24,4 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: qito25/test:latest
+          tags: qito25/app:latest
