@@ -33,3 +33,15 @@ step test
 2. setup go
 3. run test. 'make test'
 ------------------------------------------
+
+event:
+ketika push
+
+jobs:
+push docker image
+
+step:
+1. checkout
+2. login docker
+3. build image docker
+4. push docker image
